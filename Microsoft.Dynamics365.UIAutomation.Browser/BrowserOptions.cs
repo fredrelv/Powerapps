@@ -252,11 +252,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Browser
 
         public virtual FirefoxOptions ToFireFox()
         {
-            var options = new FirefoxOptions()
-            {
-                UseLegacyImplementation = false
-            };
-
+            var options = new FirefoxOptions();
             if (!string.IsNullOrEmpty(DownloadsPath))
             {
                 options.SetPreference("browser.download.folderList", 2);

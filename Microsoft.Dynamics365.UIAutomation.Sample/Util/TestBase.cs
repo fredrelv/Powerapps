@@ -89,7 +89,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Sample.Util
                 }
                 var currentDateandTime = testContextInstance.TestName + "_" + DateTime.Now.ToString("MM_dd_yyyy_hh_mm_ss");
                 string fileName = string.Format("Failed - " + currentDateandTime + ".jpeg", testContextInstance.TestResultsDirectory);
-                xrmPage.Browser.TakeWindowScreenShot(fileName, ScreenshotImageFormat.Jpeg);
+                xrmPage.Browser.TakeWindowScreenShot(fileName);
                 testContextInstance.AddResultFile(fileName);
             }
             catch (Exception ex)
